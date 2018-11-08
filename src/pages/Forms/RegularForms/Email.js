@@ -14,7 +14,7 @@ const validate = values => {
   return errors;
 };
 
-const Email = ({
+const email = ({
   submitting,
   handleSubmit,
   submitForm
@@ -41,4 +41,4 @@ const Email = ({
 export default reduxForm({
   form: 'email',
   validate
-})(Email)
+})(email)

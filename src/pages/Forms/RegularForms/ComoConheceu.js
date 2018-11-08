@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Field, reduxForm } from 'redux-form';
+import { Field } from 'redux-form';
 import renderField from 'components/FormInputs/renderField';
 
-const ComoConheceu = ({
+const comoConheceu = ({
   handleSubmit
 }) => (
   <div className="card">
@@ -27,7 +27,4 @@ const ComoConheceu = ({
   </div>
 );
 
-export default reduxForm({
-  form: 'comoconheceu',
-  validate
-})(ComoConheceu)
+export default comoConheceu;
