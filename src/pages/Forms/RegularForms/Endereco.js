@@ -48,7 +48,7 @@ import renderField from 'components/FormInputs/renderField';
         <div className="form-group">
           <label className="control-label">Cidade*</label>
           <Field
-            name="complemento"
+            name="complemento "
             type="text"
             component={renderField} />
             <select>
