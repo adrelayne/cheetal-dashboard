@@ -4,7 +4,7 @@ import Nasdaq from './Nasdaq';
 import PublicPreference from './PublicPreference';
 import UserBehavior from './UserBehavior';
 
-const Charts = () => (
+const Graficos = () => (
   <div className="content">
     <div className="container-fluid">
       <div className="row">
@@ -27,4 +27,4 @@ const Charts = () => (
   </div>
 );
 
-export default Charts;
+export default Graficos;

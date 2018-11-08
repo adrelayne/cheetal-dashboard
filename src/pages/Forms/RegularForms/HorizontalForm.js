@@ -4,16 +4,16 @@ import renderField from 'components/FormInputs/renderField';
 
 const validate = values => {
   const errors = {};
-  if (values.email !== undefined) {
-    errors.email = 'Email is required';
-  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-    errors.email = 'Invalid email address'
+  if (values.e-mail !== undefined) {
+    errors.e-mail = 'Favor inserir e-mail';
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.e-mail)) {
+    errors.e-mail = 'E-mail inválido'
   }
 
-  if (!values.password) {
-    errors.password = 'Password is required';
-  } else if (values.password.length < 6) {
-    errors.password = 'Must be 6 characters or more';
+  if (!values.senha) {
+    errors.senha = 'Insira uma senha';
+  } else if (values.senha.length < 6) {
+    errors.senha = 'Necessário 6 caracteres ou mais';
   }
   return errors;
 }
@@ -35,25 +35,25 @@ const HorizontalForm = ({
       <form className="form-horizontal" onSubmit={handleSubmit}>
 
         <div className="form-group">
-          <label className="col-md-3 control-label">Email</label>
+          <label className="col-md-3 control-label">E-mail</label>
           <div className="col-md-9">
             <Field
-              name="email"
-              type="email"
+              name="e-mail"
+              type="e-mail"
               component={renderField}
-              label="Email"
+              label="e-mail"
               />
           </div>
         </div>
 
         <div className="form-group">
-          <label className="col-md-3 control-label">Password</label>
+          <label className="col-md-3 control-label">Senha</label>
           <div className="col-md-9">
             <Field
-              name="password"
-              type="password"
+              name="senha"
+              type="senha"
               component={renderField}
-              label="Password"
+              label="senha"
               />
           </div>
         </div>
@@ -61,10 +61,10 @@ const HorizontalForm = ({
           <label className="col-md-3"></label>
           <div className="col-md-9">
             <Field
-              name="rememberMe"
+              name="lembrarMe"
               type="checkbox"
               component={renderField}
-              label="Remember Me"
+              label="lembrar Me"
               />
           </div>
         </div>

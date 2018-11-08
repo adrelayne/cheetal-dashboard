@@ -7,7 +7,7 @@ const Footer = () => (
         <ul>
           <li>
             <a href="#">
-              Home
+              Início
                   </a>
           </li>
           <li>
