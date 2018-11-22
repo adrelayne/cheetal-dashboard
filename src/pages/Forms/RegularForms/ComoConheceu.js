@@ -7,7 +7,7 @@ const comoConheceu = ({
 }) => (
   <div className="card">
     <div className="header">
-      <h4>Como Conheceu o Projeto?</h4>
+      <h4>Como Conheceu o projeto Geração Futura?</h4>
     </div>
     <div className="content">
       <form onSubmit={handleSubmit}>
