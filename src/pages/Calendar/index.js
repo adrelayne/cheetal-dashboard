@@ -11,7 +11,7 @@ let allViews = Object.keys(BigCalendar.views).map(k => BigCalendar.views[k])
 
 const events = [
   {
-    'title': 'All Day Event',
+    'title': 'Processo Seletivo - Prova 01',
     'allDay': true,
     'start': new Date(2017, 3, 0),
     'end': new Date(2017, 3, 1)

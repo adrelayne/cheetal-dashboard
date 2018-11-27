@@ -13,8 +13,8 @@ class Radio extends Component {
     let {
       input,
       label,
-      type,
-      meta: { touched, error, warning },
+      // eslint-disable-next-line no-empty-pattern
+      meta: {},
       disabled
     } = this.props;
     return (
@@ -23,8 +23,8 @@ class Radio extends Component {
         disabled: disabled
       })}>
         <span className="icons">
-          <img className="first-icon" src={uncheckImage} width={17} />
-          <img className="second-icon" src={checkImage} width={17} />
+          <img className="first-icon" src={uncheckImage} width={17} alt="first-icon"/>
+          <img className="second-icon" src={checkImage} width={17} alt="second-icon"/>
         </span>
         <input {...input} type="radio" data-toggle="radio" disabled={disabled} />
         {label}

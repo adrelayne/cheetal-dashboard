@@ -13,6 +13,7 @@ export const toggleMobileNavVisibility = () => (dispatch, getState) => {
 export default function reducer(state = {
   mobileNavVisibility: false
 }, action) {
+  // eslint-disable-next-line default-case
   switch (action.type) {
     case SET_MOBILE_NAV_VISIBILITY:
       return {

@@ -10,7 +10,7 @@ const Icons = () => (
           <div className="card">
             <div className="header">
               <h4 className="title">202 Awesome Stroke Icons</h4>
-              <p className="category">Handcrafted by our friends from <a target="_blank" href="http://themes-pixeden.com/font-demos/7-stroke/index.html">Pixeden</a></p>
+              <p className="category">Handcrafted by our friends from <a target="_blank" rel="noopener noreferrer" href="http://themes-pixeden.com/font-demos/7-stroke/index.html">Pixeden</a></p>
             </div>
             <div className="content all-icons">
               <div className="row">

@@ -17,7 +17,7 @@ let GoogleMap = () => (
                 <div style={{ width: '100%', height: '100%' }} />
               }
               mapElement={
-                <div style={{ height: `100%`, height: '100%' }} />
+                <div style={{ width: `100%`, height: '100%' }} />
               } />
           </div>
         </div>

@@ -32,4 +32,3 @@ if (module.hot) {
 }
 
 registerServiceWorker();
-
