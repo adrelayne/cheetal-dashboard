@@ -4,7 +4,7 @@ import renderField from 'components/FormInputs/renderField';
 
 <div className="card">
     <div className="header">
-      <h4>Criar uma senha</h4>
+      <h4>Criar uma senha</h4> 
     </div>
 
     <button type="button" className="btn btn-wd btn-default">

@@ -7,7 +7,7 @@ const validate = values => {
     if (!values.e-mail) {
       errors.e-mail = 'Email is required';
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.e-mail)) {
-      errors.e-mail = 'Invalid email address'
+      errors.e-mail = 'Invalid email address' 
     }
     if (!values.senha) {
       errors.senha = 'Senha é necessária';
