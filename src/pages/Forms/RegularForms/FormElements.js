@@ -1,22 +1,25 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import renderField from 'components/FormInputs/renderField';
+import { NavDropdown, MenuItem } from 'react-bootstrap';
 
 const FormElements = () => (
   <div className="card">
     <div className="header">
-      <h4>Form Elements</h4>
+      <h4>Gerenciar Etapas</h4>
     </div>
     <div className="content">
       <form className="form-horizontal">
         <div className="form-group">
-          <label className="control-label col-md-3">With help</label>
+          <label className="control-label col-md-3">Processo Seletivo</label>
           <div className="col-md-9">
-            <Field
-              name="withHelp"
-              type="text"
-              component={renderField}
-              helpText="A block of help text that breaks onto a new line." />
+            <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+      <MenuItem eventKey={3.1}>Action</MenuItem>
+      <MenuItem eventKey={3.2}>Another action</MenuItem>
+      <MenuItem eventKey={3.3}>Something else here</MenuItem>
+      <MenuItem divider />
+      <MenuItem eventKey={3.4}>Separated link</MenuItem>
+    </NavDropdown>
           </div>
         </div>
 

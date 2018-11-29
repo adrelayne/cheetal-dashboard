@@ -1,6 +1,7 @@
 import React from 'react';
 import {Field, reduxForm } from 'redux-form';
 import renderField from '../../../components/FormInputs/renderField';
+import DatePicker from '../ExtendedForms/DatePicker';
 
 const validate = values => {
     const errors = {};
@@ -39,11 +40,7 @@ const DadosPessoais = ({
 
                 <div className="form-group">
                     <label className="control-label">Data de Nascimento*</label>
-                    {/* <Field
-                        name="nascimento"
-                        type="date"
-                        component={renderField}/> */}
-
+                    <DatePicker/>
                 </div>
 
                 <div className="form-group">
@@ -84,7 +81,7 @@ const DadosPessoais = ({
                             name="radioGroup"
                             type="radio"
                             label="Não declarado"
-                            value="naodeclarado"
+                            value="sexonaodeclarado"
                             component={renderField} />
                     </div>
                 </div>
@@ -100,7 +97,7 @@ const DadosPessoais = ({
                         name="radioGroup"
                         type="radio"
                         label="Não declarado"
-                        value="naodeclarado"
+                        value="maenaodeclarado"
                         component={renderField}/>
                 </div>
 
@@ -115,7 +112,7 @@ const DadosPessoais = ({
                         name="radioGroup"
                         type="radio"
                         label="Não declarado"
-                        value="naodeclarado"
+                        value="painaodeclarado"
                         component={renderField} />
                 </div>
 

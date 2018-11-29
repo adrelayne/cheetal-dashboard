@@ -5,15 +5,7 @@ import DadosPessoais from './DadosPessoais';
 
 const RegularForms = () => (
   <div>
-    <div className="row">
-      <div className="col-md-6">
-        <DadosPessoais onSubmit={values => alert('Enter values: ' + JSON.stringify(values, null, 2))} />
-      </div>
-      <div className="col-md-6">
-        <HorizontalForm onSubmit={values => alert('Enter values: ' + JSON.stringify(values, null, 2))} />
-      </div>
-    </div>
-    <div className="row">
+          <div className="row">
       <div className="col-md-12">
         <FormElements initialValues={{
           radioGroup: 'female',
@@ -24,6 +16,14 @@ const RegularForms = () => (
           radioDisabledOnOff: 'on'
         }} />
       </div>
+    <div className="row">
+      <div className="col-md-6">
+        <DadosPessoais onSubmit={values => alert('Enter values: ' + JSON.stringify(values, null, 2))} />
+      </div>
+      <div className="col-md-6">
+        <HorizontalForm onSubmit={values => alert('Enter values: ' + JSON.stringify(values, null, 2))} />
+      </div>
+    </div>
     </div>
   </div>
 );

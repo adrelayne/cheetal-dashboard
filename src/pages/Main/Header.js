@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { toggleMobileNavVisibility } from '../../reducers/Layout';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl } from 'react-bootstrap';
+import { Navbar} from 'react-bootstrap';
 
 const Header = ({
   showMobileMenu,
@@ -16,28 +16,6 @@ const Header = ({
           <span className="icon-bar"></span>
         </button>
       </Navbar.Header>
-
-      <Navbar.Collapse>
-
-        <Nav>
-          <NavItem><i className="fa fa-dashboard"></i></NavItem>
-          <NavDropdown title={<i className="fa fa-globe" />} id="basic-nav-dropdown">
-            <MenuItem>Gerenciar Etapas</MenuItem>
-            <MenuItem>Público</MenuItem>
-            <MenuItem>Notas</MenuItem>
-          </NavDropdown>
-        </Nav>
-        <div className="separator"></div>
-        <Navbar.Form pullLeft>
-          <FormGroup>
-            <span className="input-group-addon"><i className="fa fa-search"></i></span>
-            <FormControl type="text" placeholder="Type to search" />
-          </FormGroup>
-        </Navbar.Form>
-        <Nav pullRight>
-          <NavItem>Log out</NavItem>
-        </Nav>
-      </Navbar.Collapse>
     </Navbar>
   );
 

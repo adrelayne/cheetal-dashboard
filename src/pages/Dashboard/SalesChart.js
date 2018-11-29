@@ -20,6 +20,7 @@ let optionsSales = {
   axisX: {
     showGrid: false,
   },
+  // eslint-disable-next-line no-dupe-keys
   lineSmooth: Chartist.Interpolation.simple({
     divisor: 5
   }),
