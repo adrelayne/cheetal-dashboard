@@ -37,7 +37,6 @@ class VectorMap extends Component {
   _onViewportChange = viewport => this.setState({viewport});
 
   render() {
-    let { width, height } = this.state;
     return (
       <div
         className="card"

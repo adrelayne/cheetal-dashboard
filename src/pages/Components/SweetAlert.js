@@ -13,7 +13,7 @@ export default class SweetAlert extends Component {
           <div className="card card-plain">
             <div className="header">
               <h4 className="title">Sweet Alert</h4>
-              <p className="category">A beautiful plugin, that replace the classic alert. Please check out the <a href="https://github.com/chentsulin/sweetalert-react" target="_blank">full documentation.</a></p>
+              <p className="category">A beautiful plugin, that replace the classic alert. Please check out the <a href="https://github.com/chentsulin/sweetalert-react" target="_blank" rel="noopener noreferrer">full documentation.</a></p>
             </div>
             <div className="content">
               <div className="places-sweet-alerts">

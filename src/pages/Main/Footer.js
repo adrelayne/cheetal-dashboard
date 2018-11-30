@@ -7,7 +7,7 @@ const Footer = () => (
         <ul>
           <li>
             <a href="#">
-              Início
+              Home
                   </a>
           </li>
           <li>
@@ -28,7 +28,7 @@ const Footer = () => (
         </ul>
       </nav>
       <p className="copyright pull-right">
-        © 2017 <a href="http://jslancer.com">JSLancer</a>, made with love for a better web
+        © 2018 <a href="http://cheetal.com">Cheetal</a>, made with love for a better web
       </p>
     </div>
   </footer>

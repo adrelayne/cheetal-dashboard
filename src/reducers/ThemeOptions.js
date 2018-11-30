@@ -23,6 +23,7 @@ export default function reducer(state = {
   enableBackgroundImage: true,
   backgroundImage: defaultBackground
 }, action) {
+  // eslint-disable-next-line default-case
   switch (action.type) {
     case SET_ENABLE_BACKGROUND_IMAGE:
       return {

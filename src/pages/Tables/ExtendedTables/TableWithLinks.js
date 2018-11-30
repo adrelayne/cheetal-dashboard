@@ -13,7 +13,7 @@ class TableWithLinks extends Component {
   }
 
   render() {
-    let { items, isShowingAlert } = this.state;
+    let { items } = this.state;
     return (
       <div className="card">
         <div className="header">
@@ -25,10 +25,9 @@ class TableWithLinks extends Component {
             <thead>
               <tr>
                 <th>ID</th>
-                <th>Name</th>
-                <th>Salary</th>
-                <th className="text-right">Salary</th>
-                <th className="text-right">Actions</th>
+                <th>Nome</th>
+                <th className="text-right">Capacidade</th>
+                <th className="text-right">Remover</th>
               </tr>
             </thead>
             <tbody>
@@ -36,7 +35,6 @@ class TableWithLinks extends Component {
                 <tr key={item.id}>
                   <td>{item.id}</td>
                   <td>{item.name}</td>
-                  <td>{item.job}</td>
                   <td className="text-right">$ {item.salary}</td>
                   <td className="text-right">
                     <a rel="tooltip"

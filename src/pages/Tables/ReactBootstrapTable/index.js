@@ -35,7 +35,7 @@ class ReactBootstrapTable extends Component {
             <div className="card">
               <div className="header">
                 <h4>React Bootstrap Table</h4>
-                <p>React Bootstrap Table is a multi-features, powerful data table for React. Check it at here: <a href="http://allenfang.github.io/react-bootstrap-table/index.html" target="_blank">http://allenfang.github.io/react-bootstrap-table</a></p>
+                <p>React Bootstrap Table is a multi-features, powerful data table for React. Check it at here: <a href="http://allenfang.github.io/react-bootstrap-table/index.html" target="_blank" rel="noopener noreferrer">http://allenfang.github.io/react-bootstrap-table</a></p>
               </div>
               <div className="content">
                 <BootstrapTable
