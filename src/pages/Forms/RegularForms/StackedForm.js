@@ -50,7 +50,7 @@ const StackedForm = ({
           component={renderField}
           label="Subscribe to newsletter" />
 
-        <button type="submit" className="btn btn-fill btn-info" disabled={submitting}>Submit</button>
+        <button type="submit" className="btn btn-fill btn-info">
       </form>
     </div>
   </div>

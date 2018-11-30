@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { SingleDatePicker, DateRangePicker } from 'react-dates';
+import { SingleDatePicker } from 'react-dates';
 import moment from 'moment';
 
 export default class DatePicker extends Component {
