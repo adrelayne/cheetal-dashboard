@@ -1,7 +1,7 @@
 import React from 'react';
 import HorizontalForm from './HorizontalForm';
 import FormElements from './FormElements';
-import DadosPessoais from './DadosPessoais';
+import DadosPessoais from '../Inscricao/DadosPessoais';
 
 const RegularForms = () => (
   <div>

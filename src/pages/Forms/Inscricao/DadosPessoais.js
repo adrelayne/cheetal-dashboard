@@ -15,13 +15,18 @@ const validate = values => {
     } else if (values.cpf.lenght > 11) {
         errors.cpf = 'Digite seu CPF sem pontos ou traços';
     }
+
+    if (values.email !== undefined) {
+        errors.email = 'Email is required';
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+        errors.email = 'Invalid email address'
+    }
     return errors;
 };
 
 const DadosPessoais = ({
     submitting,
     handleSubmit,
-    submitForm
 }) => (
     <div className="card">
         <div className="header">
@@ -36,6 +41,15 @@ const DadosPessoais = ({
                         type="text"
                         component={renderField}
                     />
+                </div>
+                <div className="form-group">
+                    <label className="control-label">Email</label>
+                        <Field
+                            name="email"
+                            type="email"
+                            component={renderField}
+                            label="Email"
+                        />
                 </div>
 
                 <div className="form-group">
@@ -63,14 +77,14 @@ const DadosPessoais = ({
                     <label className="control-label col-md-3">Sexo *</label>
                     <div className="col-md-9 checkbox-group">
                         <Field
-                            name="radioGroup"
+                            name="radioGroupSex"
                             type="radio"
                             label="Masculino"
                             value="masculino"
                             component={renderField} />
 
                         <Field
-                            name="radioGroup"
+                            name="radioGroupSex"
                             type="radio"
                             label="Feminino"
                             value="feminino"
@@ -78,7 +92,7 @@ const DadosPessoais = ({
                          />
 
                         <Field
-                            name="radioGroup"
+                            name="radioGroupSex"
                             type="radio"
                             label="Não declarado"
                             value="sexonaodeclarado"
@@ -94,7 +108,7 @@ const DadosPessoais = ({
                         component={renderField}/>
 
                     <Field
-                        name="radioGroup"
+                        name="radioMae"
                         type="radio"
                         label="Não declarado"
                         value="maenaodeclarado"
@@ -109,7 +123,7 @@ const DadosPessoais = ({
                         component={renderField} />
 
                     <Field
-                        name="radioGroup"
+                        name="radioPai"
                         type="radio"
                         label="Não declarado"
                         value="painaodeclarado"
