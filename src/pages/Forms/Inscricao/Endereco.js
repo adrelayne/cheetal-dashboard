@@ -82,6 +82,12 @@ const Endereco = ({
                     type="text"
                     component={renderField} />
             </div>
+
+            <div className="form-group">
+                <label className="control-label">Estado *</label>
+                <Select options={options} />
+            </div>
+
             <div className="form-group">
                 <label className="control-label">CEP*</label>
                 <Field

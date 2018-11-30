@@ -17,7 +17,7 @@ const validate = values => {
       return errors;
 };
 
-const Login = ({
+const LoginAdmin = ({
     handleSubmit,
 }) => (
     <div className="card">
@@ -42,7 +42,9 @@ const Login = ({
     	        component={renderField} />
     	    </div>
 
-    	<button type="submit" className="btn btn-fill btn-info">Entrar</button>
+        <a href="/">
+            <button type="submit" className="btn btn-fill btn-info">Entrar</button>
+        </a>
         </form>
     </div>
 </div>
@@ -51,5 +53,4 @@ const Login = ({
 export default reduxForm({
     form: 'login',
     validate
-})(Login);
-
+})(LoginAdmin);

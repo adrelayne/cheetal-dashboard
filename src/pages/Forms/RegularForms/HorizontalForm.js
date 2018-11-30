@@ -4,16 +4,16 @@ import renderField from 'components/FormInputs/renderField';
 
 const validate = values => {
   const errors = {};
-  if (values.e-mail !== undefined) {
-    errors.e-mail = 'Favor inserir e-mail';
-  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.e-mail)) {
-    errors.e-mail = 'E-mail inválido'
+  if (values.email !== undefined) {
+    errors.email = 'Favor inserir e-mail';
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+    errors.email = 'E-mail inválido'
   }
 
-  if (!values.senha) {
-    errors.senha = 'Insira uma senha';
-  } else if (values.senha.length < 6) {
-    errors.senha = 'Necessário 6 caracteres ou mais';
+  if (!values.password) {
+    errors.password = 'Insira uma senha';
+  } else if (values.password.length < 6) {
+    errors.password = 'Necessário 6 caracteres ou mais';
   }
   return errors;
 }
@@ -29,25 +29,25 @@ const HorizontalForm = ({
       <form className="form-horizontal" onSubmit={handleSubmit}>
 
         <div className="form-group">
-          <label className="col-md-3 control-label">E-mail</label>
+          <label className="col-md-3 control-label">Email</label>
           <div className="col-md-9">
             <Field
-              name="e-mail"
-              type="e-mail"
+              name="email"
+              type="email"
               component={renderField}
-              label="e-mail"
+              label="email"
               />
           </div>
         </div>
 
         <div className="form-group">
-          <label className="col-md-3 control-label">Senha</label>
+          <label className="col-md-3 control-label">Password</label>
           <div className="col-md-9">
             <Field
-              name="senha"
-              type="senha"
+              name="password"
+              type="password"
               component={renderField}
-              label="senha"
+              label="password"
               />
           </div>
         </div>
@@ -55,10 +55,10 @@ const HorizontalForm = ({
           <label className="col-md-3"></label>
           <div className="col-md-9">
             <Field
-              name="lembrarMe"
+              name="rememberMe"
               type="checkbox"
               component={renderField}
-              label="lembrar Me"
+              label="rememberMe"
               />
           </div>
         </div>

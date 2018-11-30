@@ -6,29 +6,14 @@ const Footer = () => (
       <nav className="pull-left">
         <ul>
           <li>
-            <a href="#">
+            <a href="/">
               Home
-                  </a>
-          </li>
-          <li>
-            <a href="#">
-              Company
-                  </a>
-          </li>
-          <li>
-            <a href="#">
-              Portfolio
-                  </a>
-          </li>
-          <li>
-            <a href="#">
-              Blog
-                  </a>
+            </a>
           </li>
         </ul>
       </nav>
       <p className="copyright pull-right">
-        © 2018 <a href="http://cheetal.com">Cheetal</a>, made with love for a better web
+        © 2018 <a href="http://cheetal.com">Cheetal</a>
       </p>
     </div>
   </footer>

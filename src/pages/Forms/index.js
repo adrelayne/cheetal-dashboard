@@ -3,10 +3,12 @@ import { Route } from 'react-router-dom';
 import RegularForms from './RegularForms';
 import ExtendedForms from './ExtendedForms';
 import ValidationForms from './ValidationForms';
+import LoginForm from './Login/index';
 
 const Forms = ({match}) => (
   <div className="content">
     <div className="container-fluid">
+      <Route path={`${match.url}/login-form`} component={LoginForm} />
       <Route path={`${match.url}/regular-forms`} component={RegularForms} />
       <Route path={`${match.url}/extended-forms`} component={ExtendedForms} />
       <Route path={`${match.url}/validation-forms`} render={props => {
