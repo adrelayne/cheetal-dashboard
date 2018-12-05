@@ -76,7 +76,7 @@ class Nav extends Component {
           </Link>
         </li>
         <li className={this.isPathActive('/login') ? 'active' : null}>
-          <Link to="/login">
+          <Link to="/forms/login">
             <i className="pe-7s-close"></i>
             <p>Sair</p>
           </Link>
@@ -127,8 +127,8 @@ class Nav extends Component {
           <Collapse in={this.state.formMenuOpen}>
             <div>
               <ul className="nav">
-              <li className={this.isPathActive('/forms/login-form') ? 'active' : null}>
-                  <Link to="/forms/login-form">Login</Link>
+              <li className={this.isPathActive('/forms/login') ? 'active' : null}>
+                  <Link to="/forms/login">Login</Link>
                 </li>
                 <li className={this.isPathActive('/forms/regular-forms') ? 'active' : null}>
                   <Link to="/forms/regular-forms">Regular Forms</Link>
